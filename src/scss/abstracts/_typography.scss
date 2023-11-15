@@ -1,0 +1,26 @@
+.title-1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+}
+.title-2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: $color-gray-light;
+}
+.title-3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: $color-green-dark;
+  &--white {
+    color: white;
+  }
+  &--green-light {
+    color: $color-green-light;
+  }
+}
+.title-4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $color-gray-light;
+}
