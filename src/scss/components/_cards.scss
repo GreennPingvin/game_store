@@ -1,4 +1,52 @@
 .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   background-color: $color-gray-light;
   grid-column: center-start / center-end;
+  padding: 15rem 0;
+  gap: 4rem 6rem;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: $color-blue-dark;
+  row-gap: 4.5rem;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    p {
+      color: $color-gray-light;
+      font-weight: 300;
+    }
+    &:nth-child(odd) {
+      margin-left: 4rem;
+    }
+  }
+  &__img {
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+  &__title {
+    color: white;
+    font-weight: 700;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    padding: 1.5rem 0;
+    background-color: $color-green-dark;
+    text-align: center;
+    justify-self: center;
+    align-self: end;
+    transform: translateY(50%);
+    width: 80%;
+  }
+  &__svg {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+  }
+  &__btn {
+    grid-column: span 2;
+  }
 }
