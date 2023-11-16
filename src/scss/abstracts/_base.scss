@@ -39,3 +39,12 @@ body {
     minmax(6rem, 1fr)
     [full-end];
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
