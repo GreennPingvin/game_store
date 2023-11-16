@@ -1,4 +1,36 @@
 .footer {
   background-color: $color-blue-dark;
   grid-column: full-start / full-end;
+  display: grid;
+  padding: 8rem 3rem;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 8rem;
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .nav {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      justify-items: center;
+      gap: 3.5rem;
+      li {
+        text-align: center;
+      }
+    }
+    &__link {
+      &:link,
+      &:visited {
+        font-weight: 300;
+        text-transform: uppercase;
+        transition: 0.3s all;
+      }
+      &:hover,
+      &:active {
+        color: $color-green-dark;
+        transform: translateY(-0.3rem);
+      }
+    }
+  }
 }
