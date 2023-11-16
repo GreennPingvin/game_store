@@ -2,4 +2,14 @@
   background-color: $color-green-dark;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+  padding: 2.6rem 1.5rem;
+}
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &__line {
+    height: 0.2rem;
+    background-color: white;
+  }
 }
