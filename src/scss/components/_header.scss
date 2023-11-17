@@ -1,4 +1,40 @@
 .header {
-  background-color: $color-blue-dark;
   grid-column: full-start / col-end 6;
+  display: grid;
+  grid-template-rows: 1fr repeat(2, min-content) 1fr;
+  padding: 5rem 4.6rem 5rem 6.3rem;
+  background: url("header/header-background.png") center center no-repeat;
+  &__logo {
+    justify-self: center;
+  }
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+  &__line-text {
+    color: $color-gray-dark;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    &::before,
+    &::after {
+      content: "";
+      height: 0.1rem;
+      display: block;
+      background-color: $color-gray-dark;
+    }
+  }
+  &__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-column-gap: 2rem;
+    img {
+      height: 2.5rem;
+      filter: brightness(70%);
+    }
+  }
 }

@@ -1,4 +1,37 @@
 .gamers {
   background-color: $color-blue-dark;
   grid-column: col-start 7 / full-end;
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: min-content max-content;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 4rem 2rem;
+  &__img {
+    justify-self: right;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title-3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    color: $color-green-light;
+  }
+  &__title {
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+  &__score {
+    color: $color-gray-dark;
+    font-weight: 300;
+  }
 }
